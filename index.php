@@ -9,7 +9,7 @@ $chat = new Chat();
 if (isset($_POST["sender"]) && isset($_POST["message"]))
 {
     $chat->send(new Message($_POST["sender"], $_POST["message"]));
-    header("Location: index.php");
+    header("Location: /");
 }
 ?>
 <html>
